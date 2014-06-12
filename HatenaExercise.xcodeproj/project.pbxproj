@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85DB2E7576684A67B89610E4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5A33D657F64DC9A831672A /* libPods.a */; };
+		942627501949447000DE8329 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426274F1949447000DE8329 /* LoginViewController.swift */; };
 		9437FE5E1940C3210073B885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437FE5D1940C3210073B885 /* AppDelegate.swift */; };
-		9437FE601940C3210073B885 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437FE5F1940C3210073B885 /* MasterViewController.swift */; };
-		9437FE621940C3210073B885 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437FE611940C3210073B885 /* DetailViewController.swift */; };
+		9437FE601940C3210073B885 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437FE5F1940C3210073B885 /* BookmarksViewController.swift */; };
+		9437FE621940C3210073B885 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437FE611940C3210073B885 /* BookmarkViewController.swift */; };
 		9437FE651940C3210073B885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9437FE631940C3210073B885 /* Main.storyboard */; };
 		9437FE671940C3210073B885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9437FE661940C3210073B885 /* Images.xcassets */; };
 		9437FE731940C3210073B885 /* HatenaExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437FE721940C3210073B885 /* HatenaExerciseTests.swift */; };
+		943F10D61943305400E6FCD3 /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943F10D51943305400E6FCD3 /* BookmarkManager.swift */; };
+		9468014519419FF8002C157A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468014419419FF8002C157A /* Entry.swift */; };
+		946801481941B574002C157A /* MySQLDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946801471941B574002C157A /* MySQLDateFormatter.swift */; };
+		947034591942306400D99110 /* UIAlertViewNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947034581942306400D99110 /* UIAlertViewNSError.swift */; };
+		94A62C671941E15000BFD596 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A62C661941E15000BFD596 /* User.swift */; };
+		94A62C691941E3C700BFD596 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A62C681941E3C700BFD596 /* Bookmark.swift */; };
+		94A62C6B1941F4DC00BFD596 /* BookmarkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A62C6A1941F4DC00BFD596 /* BookmarkAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +35,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9426274F1949447000DE8329 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9437FE581940C3210073B885 /* HatenaExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatenaExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9437FE5C1940C3210073B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9437FE5D1940C3210073B885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9437FE5F1940C3210073B885 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9437FE611940C3210073B885 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9437FE5F1940C3210073B885 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		9437FE611940C3210073B885 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		9437FE641940C3210073B885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9437FE661940C3210073B885 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9437FE6C1940C3210073B885 /* HatenaExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatenaExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9437FE711940C3210073B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9437FE721940C3210073B885 /* HatenaExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatenaExerciseTests.swift; sourceTree = "<group>"; };
+		943F10D51943305400E6FCD3 /* BookmarkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
+		9468014219416BAF002C157A /* HatenaExercise-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HatenaExercise-Bridging-Header.h"; sourceTree = "<group>"; };
+		9468014419419FF8002C157A /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		946801471941B574002C157A /* MySQLDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySQLDateFormatter.swift; sourceTree = "<group>"; };
+		947034581942306400D99110 /* UIAlertViewNSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertViewNSError.swift; sourceTree = "<group>"; };
+		94A62C661941E15000BFD596 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		94A62C681941E3C700BFD596 /* Bookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		94A62C6A1941F4DC00BFD596 /* BookmarkAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkAPIClient.swift; sourceTree = "<group>"; };
+		CA5A33D657F64DC9A831672A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E162B52C17EA4D5688931DB5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DB2E7576684A67B89610E4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76EE09FF0D4B46E798531CF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA5A33D657F64DC9A831672A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9437FE4F1940C3210073B885 = {
 			isa = PBXGroup;
 			children = (
 				9437FE5A1940C3210073B885 /* HatenaExercise */,
 				9437FE6F1940C3210073B885 /* HatenaExerciseTests */,
 				9437FE591940C3210073B885 /* Products */,
+				E162B52C17EA4D5688931DB5 /* Pods.xcconfig */,
+				76EE09FF0D4B46E798531CF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +108,7 @@
 		9437FE5A1940C3210073B885 /* HatenaExercise */ = {
 			isa = PBXGroup;
 			children = (
-				9437FE5D1940C3210073B885 /* AppDelegate.swift */,
-				9437FE5F1940C3210073B885 /* MasterViewController.swift */,
-				9437FE611940C3210073B885 /* DetailViewController.swift */,
+				9468013E194169B1002C157A /* Classes */,
 				9437FE631940C3210073B885 /* Main.storyboard */,
 				9437FE661940C3210073B885 /* Images.xcassets */,
 				9437FE5B1940C3210073B885 /* Supporting Files */,
@@ -112,6 +141,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9468013E194169B1002C157A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				946801461941A3C1002C157A /* Utilities */,
+				9468014019416A0C002C157A /* Models */,
+				9468013F194169DF002C157A /* Controllers */,
+				9437FE5D1940C3210073B885 /* AppDelegate.swift */,
+				9468014219416BAF002C157A /* HatenaExercise-Bridging-Header.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9468013F194169DF002C157A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9437FE5F1940C3210073B885 /* BookmarksViewController.swift */,
+				9437FE611940C3210073B885 /* BookmarkViewController.swift */,
+				9426274F1949447000DE8329 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9468014019416A0C002C157A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9468014119416A13002C157A /* DataModels */,
+				94A62C6A1941F4DC00BFD596 /* BookmarkAPIClient.swift */,
+				943F10D51943305400E6FCD3 /* BookmarkManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9468014119416A13002C157A /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				9468014419419FF8002C157A /* Entry.swift */,
+				94A62C661941E15000BFD596 /* User.swift */,
+				94A62C681941E3C700BFD596 /* Bookmark.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		946801461941A3C1002C157A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				946801471941B574002C157A /* MySQLDateFormatter.swift */,
+				947034581942306400D99110 /* UIAlertViewNSError.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9437FE761940C3210073B885 /* Build configuration list for PBXNativeTarget "HatenaExercise" */;
 			buildPhases = (
+				D00353051EED4976BF99DC93 /* Check Pods Manifest.lock */,
 				9437FE541940C3210073B885 /* Sources */,
 				9437FE551940C3210073B885 /* Frameworks */,
 				9437FE561940C3210073B885 /* Resources */,
+				16AD147EA9B24735BE80040C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,14 +288,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16AD147EA9B24735BE80040C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00353051EED4976BF99DC93 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9437FE541940C3210073B885 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9437FE621940C3210073B885 /* DetailViewController.swift in Sources */,
-				9437FE601940C3210073B885 /* MasterViewController.swift in Sources */,
+				947034591942306400D99110 /* UIAlertViewNSError.swift in Sources */,
+				9468014519419FF8002C157A /* Entry.swift in Sources */,
+				94A62C6B1941F4DC00BFD596 /* BookmarkAPIClient.swift in Sources */,
+				9437FE621940C3210073B885 /* BookmarkViewController.swift in Sources */,
+				94A62C671941E15000BFD596 /* User.swift in Sources */,
+				9437FE601940C3210073B885 /* BookmarksViewController.swift in Sources */,
+				946801481941B574002C157A /* MySQLDateFormatter.swift in Sources */,
+				943F10D61943305400E6FCD3 /* BookmarkManager.swift in Sources */,
+				94A62C691941E3C700BFD596 /* Bookmark.swift in Sources */,
 				9437FE5E1940C3210073B885 /* AppDelegate.swift in Sources */,
+				942627501949447000DE8329 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,23 +449,30 @@
 		};
 		9437FE771940C3210073B885 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E162B52C17EA4D5688931DB5 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HatenaExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HatenaExercise/HatenaExercise-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9437FE781940C3210073B885 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E162B52C17EA4D5688931DB5 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HatenaExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HatenaExercise/HatenaExercise-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -401,6 +531,7 @@
 				9437FE781940C3210073B885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9437FE791940C3210073B885 /* Build configuration list for PBXNativeTarget "HatenaExerciseTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +540,7 @@
 				9437FE7B1940C3210073B885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

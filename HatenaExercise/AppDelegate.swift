@@ -5,17 +5,24 @@
 //  Created by Takashi Nakagawa on 2014/06/06.
 //  Copyright (c) 2014年 Takashi Nakagawa. All rights reserved.
 //
-
 import UIKit
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, BookmarkAPIClientDelegate {
                             
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         // Override point for customization after application launch.
+        
+        // AFNetworking が networkActivityIndicator を管理するように
+        var sharedManager = AFNetworkActivityIndicatorManager()
+        sharedManager.enabled = true
+        
+        BookmarkAPIClient.sharedClient().delegate = self
+
         return true
     }
 
@@ -40,7 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func APIClientNeedsLogin(client: BookmarkAPIClient) {
+        // Storyboard からログイン画面を作ってモーダル表示する
+        var rootViewController = UIApplication.sharedApplication().keyWindow.rootViewController as UIViewController
+        // ID から ViewController をインスタンス化
+        var loginViewController = rootViewController.storyboard.instantiateViewControllerWithIdentifier("LoginScene") as UIViewController
+        // モーダルに表示
+        rootViewController.presentViewController(loginViewController, animated: true, completion: nil)
+    }
 }
 
